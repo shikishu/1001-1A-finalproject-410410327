@@ -2,172 +2,400 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Omnifood</title>
   </head>
   <body>
     <header class="header">
+      <a href="#">
+        <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
+      </a>
+
       <nav class="main-nav">
         <ul class="main-nav-list">
-        <li><a href="#resuem" class="main-nav-link">Resuem</a></li>
-        <li><a href="#awards" class="main-nav-link">Awards</a></li>
-        <li><a href="#classdemo" class="main-nav-link">Classdemo</a></li>
-        <li><a href="./mid-project/homepage/index.html" class="main-nav-link" >Mid-project</a></li>
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+          <li><a class="main-nav-link" href="#meals">Meals</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
         </ul>
       </nav>
-        <button class="btn-mobile-nav">
-          <ion-icon class="icon-mobile-nav" name="menu-sharp"></ion-icon>
-          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-        </button>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
-    
-    <section class="section-homepage">
-      <div class="home">
-        <div class="home-text">
-           <h1 class="fir">Welcome</h1>
-           <h1 class="mid">to My</h1>
-           <h1 class="fir"><u>Homepage</u></h1>
-        </div>
-      </div>
-    </section>
-    <section class="section-awards" id="awards">
-      <div class="awards">
-        <div class="awards-container">
-           <h1 class="awards-title">Awards</h1>
-           <div class="awards-text">
-           <li><a class="awards-list" href="https://i.imgur.com/sZFhxiU.png"><ion-icon name="trophy-outline"></ion-icon></ion-icon>Award-上海科技夏令營</a></li>
-           <li><a class="awards-list" href="https://i.imgur.com/Dme2XTs.png"><ion-icon name="trophy-outline"></ion-icon>Award-數學能力測驗</a></li>
-           <li><a class="awards-list" href="https://i.imgur.com/l0s6jUI.png"><ion-icon name="trophy-outline"></ion-icon>Awrad-專題成果發表</a></li>
-           </div>
-        </div>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              A healthy meal delivered to your door, every single day
+            </h1>
+            <p class="hero-description">
+              The smart 365-days-per-year food subscription that will make you
+              eat healthy again. Tailored to your personal tastes and
+              nutritional needs. We have delivered 250,000+ meals last year!
+            </p>
+            <a href="#" class="btn btn--full margin-right-sm"
+              >Starting eating well</a
+            >
+            <a href="#" class="btn btn--outline">Learn more &darr;</a>
 
-      </div>
-    </section>
-    <section class="section-classdemo" id="classdemo">
-      <div class="classdemo">
-        <div class="classdemo-container">
-          <center><hr size="1" width="80%" noshade> </center>
-           <h1 class="classdemo-title">Classdemo</h1>
-        <div class="slideshow">
-            <div class="mySlides fade">    
-              <a href="./classdemo/w02/intro.html">
-              <img src="./img/gallery/classdemo-1.png"/></a>
-              <div class="carousel"> 
-                <blockquote class="testimonial">
-                <p class="testimonial-num">WEEK2</p>
-                <p class="testimonial-text">My introduction</p>
+            <div class="delivered-meals">
+              <div class="delivered-imgs">
+                <img
+                  src="./img/customers/customer-1.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  src="./img/customers/customer-2.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  src="./img/customers/customer-3.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  src="./img/customers/customer-4.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  src="./img/customers/customer-5.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  src="./img/customers/customer-6.jpg"
+                  alt="Customer photo"
+                />
               </div>
+              <p class="delivered-text">
+                <span>250,000+ </span> meals delivered last year!
+              </p>
             </div>
-            <div class="mySlides fade">  
-              <a href="./classdemo/w02/pokemon.html"  >
-              <img src="./img/gallery/classdemo-2.png"/></a>
-              <div class="carousel"> 
-                <blockquote class="testimonial">
-                <p class="testimonial-num">WEEK3</p>
-                <p class="testimonial-text">Pokeman</p>
-              </div>
-            </div>
-            <div class="mySlides fade">    
-              <a href="./classdemo/w04/imageGallery.html"  >
-              <img src="./img/gallery/classdemo-3.png"/></a>
-              <div class="carousel"> 
-                <blockquote class="testimonial">
-                <p class="testimonial-num">WEEK4</p>
-                <p class="testimonial-text">Gallery</p>
-              </div>
-            </div>
-            <div class="mySlides fade">   
-              <a href="./classdemo/w04/blog.html"  > 
-              <img src="./img/gallery/classdemo-4.png"/></a>
-              <div class="carousel"> 
-                <blockquote class="testimonial">
-                <p class="testimonial-num">WEEK4</p>
-                <p class="testimonial-text">My blogn</p>
-              </div>
-            </div>
-            <div class="mySlides fade"> 
-              <a href="./classdemo/w06-ms-slideshow/index.html"  >   
-              <img src="./img/gallery/classdemo-5.png"/></a>
-              <div class="carousel"> 
-                <blockquote class="testimonial">
-                <p class="testimonial-num">WEEK5</p>
-                <p class="testimonial-text">Slideshow</p>
-              </div>
-            </div>
-            <div class="mySlides fade">    
-              <a href="./classdemo/w16/omnifood/dist/index.html"  >
-              <img src="./img/gallery/classdemo-6.png"/></a>
-              <div class="carousel"> 
-                <blockquote class="testimonial">
-                <p class="testimonial-num">WEEK16</p>
-                <p class="testimonial-text">Omnifood</p>
-              </div>
-            </div>
-          <div class="dots">
-                      <span class="dot" onclick="currentSlide(1)"></span>
-                      <span class="dot" onclick="currentSlide(2)"></span>
-                      <span class="dot" onclick="currentSlide(3)"></span>
-                      <span class="dot" onclick="currentSlide(4)"></span>
-                      <span class="dot" onclick="currentSlide(5)"></span>
-                      <span class="dot" onclick="currentSlide(6)"></span>
           </div>
-<!--overflow-->
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)" style="right: 9px;">&#10095;</a>
-      </div>  
-      </div>  
-
-        </div>
-      </div>
-
-    </section>
-
-    <section class="section-resuem" id="resuem">
-      <h1 class="section-resuem-title">Resuem
-      <center><hr class="hr" width="80%"></center>
-      <div class="resuem">
-        <div class="first">
-          <div>
-            <h2>Personal Data</h2>
-                  <p>Name: 鄒子涵<br>
-                  <pr>Gender : Female<br>
-                  <p>Age: 18</br>
-                    <p>Birthday: 12/7<br>
-                    <p>Phone: 0952388516<br>
-                      
-              <p>E-mail: 410410327@gms.tku.edu.tw<br>
-          </div>
-          <div class="img"><img src="./img/photo-1.jpg"></div>
-        </div>
-        <div class="second">
-          <div>
-              <h2>學、經歷</h2>
-                <p>淡江大學資工系<br>
-                <p>畢(肄)業年度<br>
-                <p>備註:就讀中<br>
-          </div>
-          <div>
-              <h2>求職條件</h2>
-                <p>希望職務名稱 :<br>
-                <p>希望職務類別 :<br>
-                <p>希望工作地點 :<br>
-                <p>希望薪資待遇 :<br>
+          <div class="hero-img-box">
+            <img
+              src="img/hero.png"
+              class="hero-img"
+              alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+            />
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer >
+      <section class="section-featured">
+        <div class="container">
+          <h2 class="heading-featured-in">As featured in</h2>
+          <div class="logos">
+            <img src="img/logos/techcrunch.png" alt="Techcrunch logo" />
+            <img
+              src="img/logos/business-insider.png"
+              alt="Business Insider logo"
+            />
+            <img
+              src="img/logos/the-new-york-times.png"
+              alt="The New York Times logo"
+            />
+            <img src="img/logos/forbes.png" alt="Forbes logo" />
+            <img src="img/logos/usa-today.png" alt="USA Today logo" />
+          </div>
+        </div>
+      </section>
 
-    </footer>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="./javascrip/style.js"></script>
-    </script>
+      <section class="section-testimonials" id="testimonials">
+        <div class="testimonials-container">
+          <span class="subheading">Testimonials</span>
+          <h2 class="heading-secondary">Once you try it, you can't go back</h2>
+
+          <div class="testimonials">
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Dave Bryson"
+                src="img/customers/dave.jpg"
+              />
+              <blockquote class="testimonial-text">
+                Inexpensive, healthy and great-tasting meals, without even
+                having to order manually! It feels truly magical.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Dave Bryson</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Ben Hadley"
+                src="img/customers/ben.jpg"
+              />
+              <blockquote class="testimonial-text">
+                The AI algorithm is crazy good, it chooses the right meals for
+                me every time. It's amazing not to worry about food anymore!
+              </blockquote>
+              <p class="testimonial-name">&mdash; Ben Hadley</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Steve Miller"
+                src="img/customers/steve.jpg"
+              />
+              <blockquote class="testimonial-text">
+                Omnifood is a life saver! I just started a company, so there's
+                no time for cooking. I couldn't live without my daily meals now!
+              </blockquote>
+              <p class="testimonial-name">&mdash; Steve Miller</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Hannah Smith"
+                src="img/customers/hannah.jpg"
+              />
+              <blockquote class="testimonial-text">
+                I got Omnifood for the whole family, and it frees up so much
+                time! Plus, everything is organic and vegan and without plastic.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Hannah Smith</p>
+            </figure>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-1.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+            <!-- <figcaption>Caption</figcaption> -->
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-2.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-3.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-4.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-5.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-6.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-7.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-8.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-9.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-10.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-11.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-12.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-how" id="how">
+        <div class="container">
+          <span class="subheading">How it works</span>
+          <h2 class="heading-secondary">
+            Your daily dose of health in 3 simple steps
+          </h2>
+        </div>
+        <div class="container grid grid--2-cols">
+          <!-- STEP 01 -->
+          <div class="step-text-box">
+            <p class="step-number">01</p>
+            <h3 class="heading-tertiary">
+              Tell us what you like (and what not)
+            </h3>
+            <p class="step-description">
+              Never again waste time thinking about what to eat! Omnifood AI
+              will create a 100% personalized weekly meal plan just for you. It
+              makes sure you get all the nutrients and vitamins you need, no
+              matter what diet you follow!
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+              src="./img/app/app-screen-1.png"
+              class="step-img"
+              alt="iPhone app preference selection screen "
+            />
+          </div>
+          <!-- STEP 02 -->
+          <div class="step-img-box">
+            <img
+              src="./img/app/app-screen-2.png"
+              class="step-img"
+              alt="iPhone app meal approving plan screen "
+            />
+          </div>
+          <div class="step-text-box">
+            <p class="step-number">02</p>
+            <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
+            <p class="step-description">
+              Once per week, approve the meal plan generated for you by Omnifood
+              AI. You can change ingredients, swap entire meals, or even add
+              your own recipes.
+            </p>
+          </div>
+          <!-- STEP 03 -->
+          <div class="step-text-box">
+            <p class="step-number">03</p>
+            <h3 class="heading-tertiary">Receive meals at convenient time</h3>
+            <p class="step-description">
+              Best chefs in town will cook your selected meal every day, and we
+              will deliver it to your door whenever works best for you. You can
+              change delivery schedule and address daily!
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+              src="./img/app/app-screen-3.png"
+              class="step-img"
+              alt="iPhone app delivery screen "
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Get your first meal for free!</h2>
+              <p class="cta-text">
+                Healthy, tasty and hassle-free meals are waiting for you. Start
+                eating well today. You can cancel or pause anytime. And the
+                first meal is on us!
+              </p>
+              <form class="cta-form" name="sign-up" netlify>
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="John Smith"
+                    name="full-name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Email address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="select-where">Where did you hear from us?</label>
+                  <select id="select-where" name="select-where" required>
+                    <option value="">Please choose one option:</option>
+                    <option value="friends">Friends and family</option>
+                    <option value="youtube">YouTube video</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="ad">Facebook ad</option>
+                    <option value="others">Others</option>
+                  </select>
+                </div>
+                <button class="btn btn--form">Sign up now</button>
+                <!-- <input type="checkbox" />
+                <input type="number" /> -->
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Woman enjoying food"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer"></footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
