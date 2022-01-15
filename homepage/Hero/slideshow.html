@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slideshow Demo</title>
+    <link rel="stylesheet" href="./slideshow.css" />
+    <style>
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+
+      .carousel {
+        width: 800px;
+        margin: 12rem auto;
+        background-color: #aa856d;
+        /* padding: 32px; */
+        /* padding-left: 86px; */
+        /* padding-right: 48px; */
+        padding: 32px 48px 32px 86px;
+
+        border-radius: 8px;
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        gap: 86px;
+      }
+
+      img {
+        height: 200px;
+        border-radius: 8px;
+        transform: scale(1.5);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+      }
+
+      .testimonial-text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 32px;
+        color: #ffffff;
+      }
+
+      .testimonial-author {
+        font-size: 14px;
+        margin-bottom: 4px;
+        color: #ffffff;
+      }
+
+      .testimonial-job {
+        font-size: 12px;
+        color: #ffffff;
+      }
+      
+      .prev{
+        background-color: #fff;
+        border: none;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .next{
+        background-color: #fff;
+        border: none;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .btn-icon {
+        height: 24px;
+        width: 24px;
+        stroke: #546b64;
+      }
+      .dots {
+        position: relative;
+        left: 95%;
+        bottom: 0;
+        transform: translate(-50%, 32px);
+        display: flex;
+        gap: 12px;
+      }
+
+      .dot {
+        height: 10px;
+        width: 10px;
+        background-color: rgb(192, 146, 61);
+        border: 2px solid #2a293d;
+        border-radius: 50%;
+        margin: 5px;
+        cursor:pointer;
+      }
+
+    </style>
+
+  </head>
+  <body bgcolor="#d3d3d3">
+    <div class="slideshow">
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="carousel">     
+          <img src="./img/img-1.jpeg" style="width: 40%" />
+          <blockquote class="testimonial">
+            <p class="testimonial-text">
+          位在基隆中正區的基隆港鄰近火車站，對旅人來說是交通相當便利的一個景點。三面環山的基隆港是台灣最北端的港口，也是台灣的第二大港口，是一條長度約為2000公尺，寬約400公尺的漏斗型水道，具備了軍事港口、貨運商港、客運碼頭與雜貨碼頭的多元功能性。
+            </p>
+          <p class="testimonial-author">My home</p></div>
+        </div>
+        <div class="mySlides fade">
+          <div class="carousel">     
+          <img src="./img/img-2.jpg" style="width: 100%" />
+          <blockquote class="testimonial">
+            <p class="testimonial-text">
+              基隆廟口指的也是這區。而基隆廟口夜市之歷史可以追朔到日治期待末期，因為奠濟宮香火鼎盛吸引著許多流動攤販擺攤，從廟埕上聚集延伸，漸漸地形成了一個市集，時代變遷，政府接管後，在仁三路上、愛三路到愛四路之間路段的攤販成為廟口夜市，登記有60家廟口夜市美食。
+            </p>
+            <p class="testimonial-author">My home</p>
+        </div>
+        </div>
+        <div class="mySlides fade">
+          <div class="carousel">     
+            <img src="./img/img-3.jpg" style="width: 100%" />
+            <blockquote class="testimonial">
+              <p class="testimonial-text">
+                九份不僅保留著日據時代的舊式建築，更重要的是山城的氛圍。雖然今日的老街總是人聲鼎沸，但只有在九份，才能享受到特有的小徑通幽賞景之樂。到這裡，不能免的似乎一定要吃碗芋圓，其實這裡的懷舊小吃還有很多選擇，在基山街、豎崎路及輕便路三條街道形成一個真實版故事屋，在這裡可以一探九份精彩的故事，可以邊逛邊吃，邊吃邊走。時間多的話，就到黃金博物館去走走，更可以窺見昔日淘金盛況的些許風貌。
+              </p>
+            <p class="testimonial-author">I have lived here</p>
+        </div>
+        </div>
+        <div class="mySlides fade">
+
+          <div class="carousel">         
+            <img src="./img/img-4.jpg" style="width: 100%" />
+            <blockquote class="testimonial">
+                <p class="testimonial-text">
+                  位於金瓜石往水湳洞的公路邊，早期曾經叱吒一時現已廢棄的台金公司，在金瓜石及九份產礦由於山泉水與雨水滲入，礦砂沉積溪床，並有菌類附著滋生，水質飽含氧化的金屬礦石顏色，而形成金黃色的瀑布景觀，當地居民故稱為『黃金瀑布』。
+            </p>
+            <p class="testimonial-author">I have lived here</p>
+            </div>
+        </div>
+        <div class="mySlides fade">
+
+            <div class="carousel">         
+              <img src="./img/img-5.jpg" style="width: 40%" />
+              <blockquote class="testimonial">
+                  <p class="testimonial-text">
+                位於新北市瑞芳區水湳洞聚落北側的陰陽海，以其獨特金黃色與蔚藍色海水著名，是台灣東北角濱海地區的特殊地理景觀。 因附近的金瓜石山上富有大量的黃鐵礦，在風化後形成銅、鐵離子，並融入水中形成氫氧化鐵吸附泥沙而成黃褐色懸浮物，才有陰陽海的黃藍漸層獨特美景。
+              </p>
+              <p class="testimonial-author">I have lived here</p>
+              </div>
+        </div>
+      <br />
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)" style="right: 9px;">&#10095;</a>
+
+      <!-- The dots/circles -->
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+</div>  
+    <script src="./slideshow.js"></script>
+  </body>
+</html>
